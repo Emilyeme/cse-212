@@ -157,16 +157,9 @@ public class TakingTurnsQueueTests
         {
             Assert.AreEqual("No one in the queue.", e.Message);
         }
-        catch (AssertFailedException)
-        {
-            throw;
-        }
-        catch (Exception e)
-        {
-            Assert.Fail(
-                 string.Format("Unexpected exception of type {0} caught: {1}",
-                                e.GetType(), e.Message)
-            );
-        }
+       catch (Exception e)
+    {
+        Assert.Fail($"Unexpected exception: {e.Message}");
+    }
     }
 }

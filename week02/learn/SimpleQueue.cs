@@ -10,6 +10,16 @@
         queue.Enqueue(100);
         var value = queue.Dequeue();
         Console.WriteLine(value);
+        
+
+
+
+
+        Console.WriteLine("Test 1");
+        var queue = new SimpleQueue();
+        queue.Enqueue(100);
+        var value = queue.Dequeue();
+        Console.WriteLine(value);
         // Defect(s) Found:
 
         Console.WriteLine("------------");
